@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/core/constants/theme.dart';
 
 class Skill extends StatelessWidget {
-  const Skill({super.key, required this.text, this.bgColor});
+  const Skill({super.key, required this.text});
   final String text;
-  final Color? bgColor;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: bgColor ?? kContainerBgColor,
+        border: Border.all(color: Colors.white),
         borderRadius: BorderRadius.circular(5),
       ),
       child: Padding(
@@ -19,14 +17,8 @@ class Skill extends StatelessWidget {
             text,
             style: TextStyle(
               height: 0,
-              color: kLabelsColor,
+              color: Colors.white,
               fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(
-                  color: kLabelsColor.withValues(alpha: 0.5),
-                  blurRadius: 20,
-                ),
-              ],
             ),
           ),
         ),
