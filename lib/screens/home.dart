@@ -159,6 +159,13 @@ class Home extends StatelessWidget {
                                     ),
                                   ),
                                 ),
+
+                                TitleDivider(title: 'About'),
+                                Text(
+                                  'Flutter Developer | 🚀 Turning Ideas into Smooth, Beautiful AppsHey there! 👋 I’m Youssef — a passionate Flutter developer 🐦 with hands-on experience building modern, cross-platform mobile apps 📱I specialize in transforming ideas 💡 into fully functional ✅, pixel-perfect 🎨 applications that provide exceptional user experiences 🌟I’m always learning 📚 and improving 🔧, focusing on crafting clean ✍️, scalable 📐 code and delivering reliable 🔒, high-performance ⚡ productsI thrive on problem-solving 🧩 and enjoy turning visions 👀 into seamless, intuitive apps ✨Focused on continuous growth 🌱, I aim to create apps that not only work 💻 but also feel great ❤️Let’s connect 🤝 and build something awesome! 🌍',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(color: Colors.white),
+                                ),
                                 TitleDivider(title: 'Contact📞'),
                                 Column(
                                   spacing: 10,
@@ -232,12 +239,6 @@ class Home extends StatelessWidget {
                                       ],
                                     ),
                                   ],
-                                ),
-                                TitleDivider(title: 'About'),
-                                Text(
-                                  'Flutter Developer | Turning Ideas into Smooth, Beautiful AppsHey there! I’m Youssef — a passionate Flutter developer with hands-on experience building modern, cross-platform mobile apps. I specialize in transforming ideas into fully functional, pixel-perfect applications that provide exceptional user experiences.I’m always learning and improving, focusing on crafting clean, scalable code and delivering reliable, high-performance products. I thrive on problem-solving and enjoy turning visions into seamless, intuitive apps.Focused on continuous growth, I aim to create apps that not only work but also feel great.Let’s connect and build something awesome!',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(color: Colors.white),
                                 ),
                               ],
                             ),

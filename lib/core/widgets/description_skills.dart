@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -81,6 +82,10 @@ class DescriptionSkills extends StatelessWidget {
               SocialIconButton(
                 url: 'https://discord.com/users/716052671408373841',
                 svgIcon: 'discord',
+              ),
+              SocialIconButton(
+                url: 'https://youssef-essam-flutter-de-kl6z8fl.gamma.site/',
+                icon: CupertinoIcons.globe,
               ),
               Spacer(),
               TextButton(
