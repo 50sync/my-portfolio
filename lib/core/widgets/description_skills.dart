@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gif/gif.dart';
 import 'package:my_portfolio/core/constants/theme.dart';
+import 'package:my_portfolio/core/utils/download_file.dart';
 import 'package:my_portfolio/core/widgets/skill.dart';
 import 'package:my_portfolio/core/widgets/social_icon_button.dart';
 
@@ -75,6 +77,78 @@ class DescriptionSkills extends StatelessWidget {
               SocialIconButton(
                 url: 'https://github.com/50sync',
                 svgIcon: 'github',
+              ),
+              SocialIconButton(
+                url: 'https://discord.com/users/716052671408373841',
+                svgIcon: 'discord',
+              ),
+              Spacer(),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.blueGrey),
+                onPressed: () {
+                  void showDownloadDialog(String message) {
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return Dialog(
+                          backgroundColor: Colors.transparent,
+                          child: Container(
+                            width: 0.5.sw,
+                            height: 0.3.sh,
+                            decoration: BoxDecoration(
+                              color: kBgColor,
+                              boxShadow: [
+                                BoxShadow(color: Colors.indigo, blurRadius: 10),
+                              ],
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Align(
+                                    alignment: Alignment.topRight,
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Icon(
+                                        Icons.close,
+                                        color: Colors.white,
+                                        size: 40,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Center(
+                                  child: Text(
+                                    message,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18.sp,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    );
+                  }
+
+                  downloadFile('assets/my-resume.pdf', 'youssef-cv.pdf')
+                      .then((onValue) {
+                        showDownloadDialog('CV Downloaded');
+                      })
+                      .catchError((ex) {
+                        showDownloadDialog(ex.toString());
+                      });
+                },
+                child: Text(
+                  'Download CV',
+                  style: TextStyle(color: Colors.white, fontSize: 16.sp),
+                ),
               ),
             ],
           ),
