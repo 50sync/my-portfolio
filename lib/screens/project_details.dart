@@ -54,8 +54,9 @@ class _ProjectDetailsState extends State<ProjectDetails> {
                         padding: const EdgeInsets.all(16.0),
                         child: PageView.builder(
                           controller: _pageController,
-                          itemCount: widget.projectModel.pageViewImgs.length,
                           itemBuilder: (context, index) {
+                            index =
+                                index % widget.projectModel.pageViewImgs.length;
                             return GestureDetector(
                               onTap: () {
                                 showDialog(

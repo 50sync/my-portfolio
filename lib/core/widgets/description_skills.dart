@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gif/gif.dart';
 import 'package:my_portfolio/core/constants/theme.dart';
 import 'package:my_portfolio/core/utils/download_file.dart';
-import 'package:my_portfolio/core/widgets/skill.dart';
 import 'package:my_portfolio/core/widgets/social_icon_button.dart';
 
 class DescriptionSkills extends StatelessWidget {

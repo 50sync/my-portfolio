@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_portfolio/core/constants/theme.dart';
-import 'package:my_portfolio/core/utils/download_file.dart';
 import 'package:my_portfolio/core/widgets/description_skills.dart';
 import 'package:my_portfolio/core/widgets/projects_list_view.dart';
 import 'package:my_portfolio/core/widgets/title_divider.dart';
