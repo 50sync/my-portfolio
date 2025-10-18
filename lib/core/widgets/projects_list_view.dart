@@ -22,7 +22,7 @@ class ProjectsListView extends StatelessWidget {
         description: 'Transportation app between Egypt governorates',
       ),
       ProjectModel(
-        skills: ['Flutter', 'GetX', 'Rest API', 'Fire Base'],
+        skills: ['Flutter', 'GetX', 'Rest API', 'FireBase'],
         projectImg: 'xam.png',
         heroTag: 'xam',
         pageViewImgs: [

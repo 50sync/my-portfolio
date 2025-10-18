@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gif/gif.dart';
 import 'package:my_portfolio/core/constants/theme.dart';
 import 'package:my_portfolio/core/utils/download_file.dart';
+import 'package:my_portfolio/core/widgets/pulsing_online_indicator.dart';
 import 'package:my_portfolio/core/widgets/social_icon_button.dart';
 
 class DescriptionSkills extends StatelessWidget {
@@ -57,7 +58,7 @@ class DescriptionSkills extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             spacing: 5,
             children: [
-              Text('•', style: TextStyle(color: Colors.green, fontSize: 30)),
+              PulsingOnlineIndicator(),
               Text(
                 'Available for new projects',
                 style: TextStyle(color: Colors.white),

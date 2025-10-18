@@ -133,6 +133,7 @@ class Home extends StatelessWidget {
                                   title: 'Skills⚒️',
                                 ),
                                 const SizedBox(height: 10),
+
                                 SizedBox(
                                   width: 0.55.sw,
                                   child: Padding(
